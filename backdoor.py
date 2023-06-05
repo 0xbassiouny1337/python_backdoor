@@ -15,7 +15,7 @@ for i in range(20):
         time.sleep(5)
 
 while True:
-    data = s.recv(4096)
+    data = s.recv(99999)
     if data != b'':
         data = str(data, "utf-8")
 
